@@ -960,33 +960,7 @@ textarea.form-control { min-height: 130px; resize: vertical; }
 .footer-ico { font-size: 0.78rem; color: rgba(255,255,255,0.28); }
 
 /* --------------------------------------------------------------------------
-   19. Cookie lišta
-   -------------------------------------------------------------------------- */
-.cookie-bar {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 1500;
-  background: rgba(33,18,24,0.97);
-  backdrop-filter: blur(8px);
-  padding: var(--sp-3) var(--sp-4);
-  transform: translateY(110%);
-  transition: transform var(--transition);
-}
-.cookie-bar.visible { transform: translateY(0); }
-.cookie-bar-inner {
-  max-width: var(--max-width);
-  margin-inline: auto;
-  display: flex;
-  align-items: center;
-  gap: var(--sp-4);
-  flex-wrap: wrap;
-}
-.cookie-bar-inner p { color: rgba(255,255,255,0.75); font-size: 0.9rem; flex: 1; min-width: 220px; max-width: none; }
-.cookie-bar-inner p a { color: var(--clr-primary); text-decoration: underline; }
-.cookie-actions { display: flex; gap: var(--sp-2); flex-shrink: 0; }
-
-/* --------------------------------------------------------------------------
-   20. Scroll-reveal animace
+   19. Scroll-reveal animace
    Skrývání POUZE pro .js-loaded. Bez JS = obsah vždy viditelný.
    -------------------------------------------------------------------------- */
 .reveal {

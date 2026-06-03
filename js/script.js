@@ -144,19 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') { closeMenu(); closeLightbox(); }
   });
 
-  /* --- Cookie lista --- */
-  const cookieBar    = document.getElementById('cookie-bar');
-  const cookieAccept = document.getElementById('cookie-accept');
-  if (cookieBar && !localStorage.getItem('kph-cookies')) {
-    setTimeout(() => cookieBar.classList.add('visible'), 1500);
-  }
-  if (cookieAccept) {
-    cookieAccept.addEventListener('click', () => {
-      localStorage.setItem('kph-cookies', '1');
-      cookieBar.classList.remove('visible');
-    });
-  }
-
   /* --- Kontaktni formular (honeypot) --- */
   const form = document.getElementById('contact-form');
   if (form) {
