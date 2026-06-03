@@ -1,0 +1,28 @@
+# Kosmetika pod hradem
+
+> Kosmetický salon Dany Janoušové v Kamýku. Profesionální péče o pleť, maderoterapie, masáže a epilace.
+
+## Kontakt
+
+- Jméno: Dana Janoušová
+- Adresa: Kamýk 65, 41201
+- Telefon: +420 725 816 813
+- E-mail: Dana.Ltm@seznam.cz
+- IČO: 05583900
+
+## Služby
+
+- Kosmetické ošetření (od 649 Kč / 60 min)
+- Maderoterapie (od 750 Kč / 60 min)
+- Masáž obličeje, krku a dekoltu
+- Epilace obličeje (od 100 Kč)
+- Lash lifting řas (700 Kč)
+- Mezoterapie (1799 Kč)
+
+## Otevírací doba
+
+Pracovní dny 8:00–16:00
+
+## O webu
+
+Jednostránkový web kosmetického salonu. Obsah je určen pro informování klientů o službách, ceníku a možnosti objednání.

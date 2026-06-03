@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stránka nenalezena – Kosmetika pod hradem</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fonty -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- WebAwesome (wa-icon) -->
+  <script type="module" src="https://early.webawesome.com/webawesome@2.0.0-alpha.10/dist/webawesome.loader.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <style>
+    :root {
+      --clr-accent:  #aa506e;
+      --clr-primary: #f4e7e8;
+      --clr-text:    #333333;
+      --font-h: 'Aboreto', serif;
+      --font-b: 'Abhaya Libre', serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-b);
+      color: var(--clr-text);
+      background: var(--clr-primary);
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .err-icon {
+      font-size: 6rem;
+      color: var(--clr-accent);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    h1 {
+      font-family: var(--font-h);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 400;
+      color: var(--clr-text);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #666;
+      margin-bottom: 2rem;
+      max-width: 44ch;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .85rem 2rem;
+      border-radius: 9999px;
+      font-family: var(--font-b);
+      font-size: 1rem;
+      font-weight: 700;
+      background: var(--clr-accent);
+      color: #fff;
+      text-decoration: none;
+      transition: background .25s ease, transform .25s ease;
+    }
+    .btn:hover { background: #8d3d59; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+
+  <wa-icon class="err-icon" name="face-frown" variant="regular" aria-hidden="true"></wa-icon>
+
+  <h1>Stránka nenalezena</h1>
+  <p>
+    Omlouváme se, ale hledaná stránka neexistuje nebo&nbsp;byla přesunuta.
+    Zkuste se vrátit na&nbsp;hlavní stránku.
+  </p>
+
+  <a href="/" class="btn">
+    ← Zpět na hlavní stránku
+  </a>
+
+</body>
+</html>

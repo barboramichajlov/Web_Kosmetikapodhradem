@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kosmetikapodhradem.cz/sitemap.xml
