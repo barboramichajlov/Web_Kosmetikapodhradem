@@ -63,7 +63,7 @@
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
       "opens": "08:00",
-      "closes": "16:00"
+      "closes": "19:00"
     }],
     "priceRange": "649–1799 Kč",
     "image": "https://kosmetikapodhradem.cz/Obrazky/Logo_Kosmetikapodhradem.png"
@@ -419,7 +419,7 @@
               </div>
               <div class="cenik-row" role="listitem">
                 <span class="cenik-row-name">Maderoterapie těla</span>
-                <span class="cenik-row-price">750&nbsp;Kč / 60&nbsp;min</span>
+                <span class="cenik-row-price">850&nbsp;Kč / 60&nbsp;min</span>
               </div>
               <div class="cenik-row" role="listitem">
                 <span class="cenik-row-name">Mezoterapie dle typu pleti</span>
@@ -574,76 +574,71 @@
           <h2 class="section-title" id="recenze-title">Co o&nbsp;mně říkají klienti?</h2>
         </header>
 
-        <!-- 2×2 grid recenzí -->
-        <div class="recenze-grid">
+        <!-- Slider recenzí -->
+        <div class="recenze-slider reveal">
 
-          <article class="recenze-card reveal reveal-d1">
-            <div class="recenze-stars" aria-label="Hodnocení 5 z 5 hvězdiček">★★★★★</div>
-            <blockquote class="recenze-text">
-              „Byla jsem na maderoterapii. Velmi milý přístup paní Dany. Odcházela jsem spokojená
-              a&nbsp;nadšená. Chodím opakovaně, vidím výsledky a&nbsp;už i&nbsp;mé okolí si všímá. Doporučuji."
-            </blockquote>
-            <div class="recenze-author">
-              <img
-                src="Obrazky/Recenze/Misa_Galiova.jpg"
-                alt="Portrét klientky Míša Galiová"
-                loading="lazy"
-                width="50" height="50">
-              <span class="recenze-author-name">Míša Galiová</span>
-            </div>
-          </article>
+          <!-- Fotky nahoře -->
+          <div class="recenze-avatars" role="tablist" aria-label="Vybrat recenzi">
+            <button class="recenze-avatar active" role="tab" aria-selected="true" data-index="0" aria-label="Recenze: Míša Galiová">
+              <img src="Obrazky/Recenze/Misa_Galiova.jpg" alt="Míša Galiová" width="80" height="80" loading="lazy">
+            </button>
+            <button class="recenze-avatar" role="tab" aria-selected="false" data-index="1" aria-label="Recenze: Andrea Maršálková">
+              <img src="Obrazky/Recenze/Andrea_Marsalkova.jpg" alt="Andrea Maršálková" width="80" height="80" loading="lazy">
+            </button>
+            <button class="recenze-avatar" role="tab" aria-selected="false" data-index="2" aria-label="Recenze: Barbora Michajlov">
+              <img src="Obrazky/Recenze/Barbora_Michajlov.jpg" alt="Barbora Michajlov" width="80" height="80" loading="lazy">
+            </button>
+            <button class="recenze-avatar" role="tab" aria-selected="false" data-index="3" aria-label="Recenze: Pavlína Vondrová">
+              <img src="Obrazky/Recenze/Pavlina_Vondrova.jpg" alt="Pavlína Vondrová" width="80" height="80" loading="lazy">
+            </button>
+          </div>
 
-          <article class="recenze-card reveal reveal-d2">
-            <div class="recenze-stars" aria-label="Hodnocení 5 z 5 hvězdiček">★★★★★</div>
-            <blockquote class="recenze-text">
-              „Chodím už několik měsíců a&nbsp;pokaždé jsem moc spokojená.
-              Milý a&nbsp;profesionální přístup. Moc doporučuji."
-            </blockquote>
-            <div class="recenze-author">
-              <img
-                src="Obrazky/Recenze/Andrea_Marsalkova.jpg"
-                alt="Portrét klientky Andrea Maršálková"
-                loading="lazy"
-                width="50" height="50">
-              <span class="recenze-author-name">Andrea Maršálková</span>
-            </div>
-          </article>
+          <!-- Recenze + navigace -->
+          <div class="recenze-slides-wrap">
+            <button class="recenze-nav-btn recenze-prev" aria-label="Předchozí recenze">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
 
-          <article class="recenze-card reveal reveal-d3">
-            <div class="recenze-stars" aria-label="Hodnocení 5 z 5 hvězdiček">★★★★★</div>
-            <blockquote class="recenze-text">
-              „Paní Dana je velmi milá, profesionální a&nbsp;během ošetření vytváří krásně příjemnou atmosféru.
-              Takže jsem se cítila jako v&nbsp;luxusním wellness."
-            </blockquote>
-            <div class="recenze-author">
-              <img
-                src="Obrazky/Recenze/Barbora_Michajlov.jpg"
-                alt="Portrét klientky Barbora Michajlov"
-                loading="lazy"
-                width="50" height="50">
-              <span class="recenze-author-name">Barbora Michajlov</span>
+            <div class="recenze-slides">
+              <div class="recenze-slide active" role="tabpanel">
+<blockquote class="recenze-text">
+                  „Byla jsem na maderoterapii. Velmi milý přístup paní Dany. Odcházela jsem spokojená
+                  a&nbsp;nadšená. Chodím opakovaně, vidím výsledky a&nbsp;už i&nbsp;mé okolí si všímá. Doporučuji."
+                </blockquote>
+                <span class="recenze-author-name">Míša Galiová</span>
+              </div>
+              <div class="recenze-slide" role="tabpanel">
+<blockquote class="recenze-text">
+                  „Chodím už několik měsíců a&nbsp;pokaždé jsem moc spokojená.
+                  Milý a&nbsp;profesionální přístup. Moc doporučuji."
+                </blockquote>
+                <span class="recenze-author-name">Andrea Maršálková</span>
+              </div>
+              <div class="recenze-slide" role="tabpanel">
+<blockquote class="recenze-text">
+                  „Paní Dana je velmi milá, profesionální a&nbsp;během ošetření vytváří krásně příjemnou atmosféru.
+                  Takže jsem se cítila jako v&nbsp;luxusním wellness."
+                </blockquote>
+                <span class="recenze-author-name">Barbora Michajlov</span>
+              </div>
+              <div class="recenze-slide" role="tabpanel">
+<blockquote class="recenze-text">
+                  „Moc krásné prostředí, paní kosmetička je moc šikovná, milá. S&nbsp;výsledkem jsem naprosto
+                  spokojená. Byla jsem edukovaná, co používat na pleť, jaký mám typ pleti, dostala jsem cenné
+                  rady, jak o&nbsp;svou pleť pečovat. Určitě budu chodit pravidelně. Moc děkuji za&nbsp;krásnou péči."
+                </blockquote>
+                <span class="recenze-author-name">Pavlína Vondrová</span>
+              </div>
             </div>
-          </article>
 
-          <article class="recenze-card reveal reveal-d4">
-            <div class="recenze-stars" aria-label="Hodnocení 5 z 5 hvězdiček">★★★★★</div>
-            <blockquote class="recenze-text">
-              „Moc krásné prostředí, paní kosmetička je moc šikovná, milá. S&nbsp;výsledkem jsem naprosto
-              spokojená. Byla jsem edukovaná, co používat na pleť, jaký mám typ pleti, dostala jsem cenné
-              rady, jak o&nbsp;svou pleť pečovat. Určitě budu chodit pravidelně. Moc děkuji za&nbsp;krásnou péči."
-            </blockquote>
-            <div class="recenze-author">
-              <img
-                src="Obrazky/Recenze/Pavlina_Vondrova.jpg"
-                alt="Portrét klientky Pavlína Vondrová"
-                loading="lazy"
-                width="50" height="50">
-              <span class="recenze-author-name">Pavlína Vondrová</span>
-            </div>
-          </article>
+            <button class="recenze-nav-btn recenze-next" aria-label="Následující recenze">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
 
         </div>
       </div>
+      <p class="recenze-note">Všechny reference jsou ověřené. Reference sbírám od svých klientek a&nbsp;některé z&nbsp;nich zveřejňuji.</p>
     </section>
 
     <!-- ====================================================================
@@ -750,7 +745,7 @@
 
           <p class="objednat-inner-text">
             Svůj termín si můžete zarezervovat na&nbsp;telefonním čísle
-            v&nbsp;pracovní den od&nbsp;8:00 do&nbsp;16:00.
+            v&nbsp;pracovní den od&nbsp;8:00 do&nbsp;19:00.
             Budu se na&nbsp;vás těšit v&nbsp;mém salonu.
           </p>
 
@@ -761,7 +756,7 @@
 
           <p class="objednat-hours">
             <i class="fa-regular fa-clock" aria-hidden="true" style="margin-right:.3rem"></i>
-            Pracovní dny 8:00–16:00
+            Pracovní dny 8:00–19:00
           </p>
 
         </div>
@@ -835,7 +830,7 @@
           </div>
           <div class="footer-contact-line" style="margin-top:var(--sp-2)">
             <i class="fa-regular fa-clock" aria-hidden="true"></i>
-            <span>Po–Pá 8:00–16:00</span>
+            <span>Po–Pá 8:00–19:00</span>
           </div>
           <div class="footer-contact-line" style="margin-top:var(--sp-2)">
             <i class="fa-solid fa-building" aria-hidden="true"></i>
@@ -849,6 +844,7 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Kosmetika pod hradem – Dana Janoušová. Všechna práva vyhrazena.</p>
         <p class="footer-ico">IČO:&nbsp;05583900 | Zapsáno v&nbsp;Živnostenském rejstříku</p>
+        <p class="footer-ico">Fotografie: Freepik | Ilustrace: Canva</p>
       </div>
 
     </div>

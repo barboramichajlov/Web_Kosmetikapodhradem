@@ -144,6 +144,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') { closeMenu(); closeLightbox(); }
   });
 
+  /* --- Recenze slider --- */
+  const avatarBtns = document.querySelectorAll('.recenze-avatar');
+  const slides     = document.querySelectorAll('.recenze-slide');
+  let currentSlide = 0;
+
+  const showSlide = (index) => {
+    currentSlide = (index + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+    avatarBtns.forEach((b, i) => {
+      b.classList.toggle('active', i === currentSlide);
+      b.setAttribute('aria-selected', i === currentSlide ? 'true' : 'false');
+    });
+  };
+
+  avatarBtns.forEach((btn, i) => btn.addEventListener('click', () => showSlide(i)));
+  const prevBtn = document.querySelector('.recenze-prev');
+  const nextBtn = document.querySelector('.recenze-next');
+  if (prevBtn) prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
   /* --- Kontaktni formular (honeypot) --- */
   const form = document.getElementById('contact-form');
   if (form) {
