@@ -754,9 +754,10 @@ section { padding-block: var(--sp-10); }
 
 .recenze-slides-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--sp-3);
 }
+.recenze-nav-btn { margin-top: 4rem; }
 
 .recenze-slides {
   flex: 1;
