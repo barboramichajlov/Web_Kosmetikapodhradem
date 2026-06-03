@@ -54,6 +54,10 @@
     @media(min-width:1024px){
       #hamburger{display:none!important}
     }
+    @media(min-width:768px){
+      .cenik-grid{grid-template-rows:auto 1fr}
+      .cenik-block{display:grid;grid-row:span 2;grid-template-rows:subgrid}
+    }
     .recenze-slider{max-width:720px;margin:0 auto;text-align:center}
     .recenze-avatars{display:flex;justify-content:center;align-items:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
     .recenze-avatar{background:none;border:none;padding:4px;cursor:pointer;border-radius:50%}
