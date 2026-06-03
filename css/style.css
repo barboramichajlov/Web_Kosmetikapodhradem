@@ -465,6 +465,12 @@ section { padding-block: var(--sp-10); }
   align-items: flex-end;
 }
 
+.img-acc-panel--active .img-acc-overlay,
+.img-acc-panel:hover .img-acc-overlay,
+.img-acc-panel:focus-visible .img-acc-overlay {
+  background: rgba(0, 0, 0, 0.58);
+}
+
 /* Obsah (text + btn) – schovaný, zobrazí se při rozbalení */
 .img-acc-content {
   padding: var(--sp-4);

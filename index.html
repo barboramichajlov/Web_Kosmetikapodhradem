@@ -41,6 +41,32 @@
   <!-- Hlavní stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Inline záloha: kritické styly -->
+  <style>
+    html{font-size:18px}
+    #navbar .container{display:flex;align-items:center;justify-content:space-between;width:100%}
+    @media(max-width:1023px){
+      .nav-links-left,.nav-links-right{display:none!important}
+      .nav-logo{margin-left:1rem}
+      .o-mne{padding-bottom:2rem!important}
+      .statistiky{padding-top:2rem!important}
+    }
+    @media(min-width:1024px){
+      #hamburger{display:none!important}
+    }
+    .recenze-slider{max-width:720px;margin:0 auto;text-align:center}
+    .recenze-avatars{display:flex;justify-content:center;align-items:center;gap:1rem;margin-bottom:2rem;flex-wrap:wrap}
+    .recenze-avatar{background:none;border:none;padding:4px;cursor:pointer;border-radius:50%}
+    .recenze-avatar img{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid transparent;display:block}
+    .recenze-avatar.active img{border-color:#c8a97e;box-shadow:0 0 0 3px #c6b3af}
+    .recenze-slides-wrap{display:flex;align-items:center;gap:1rem}
+    .recenze-slides{flex:1;min-height:160px}
+    .recenze-slide{flex-direction:column;align-items:center}
+    .recenze-slide.active{display:flex}
+    .recenze-nav-btn{background:none;border:2px solid #c6b3af;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#c6b3af;flex-shrink:0}
+    .recenze-note{text-align:center;max-width:none;white-space:normal}
+  </style>
+
   <!-- Strukturovaná data – LocalBusiness -->
   <script type="application/ld+json">
   {
@@ -115,10 +141,10 @@
         </ul>
 
         <!-- Hamburger (mobil) -->
-        <button id="hamburger" class="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <button id="hamburger" class="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu" style="display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;cursor:pointer;background:none;border:none;padding:0;flex-shrink:0;position:fixed;top:12px;right:16px;z-index:1100">
+          <span style="display:block;width:22px;height:2px;background:#333;border-radius:2px"></span>
+          <span style="display:block;width:22px;height:2px;background:#333;border-radius:2px"></span>
+          <span style="display:block;width:22px;height:2px;background:#333;border-radius:2px"></span>
         </button>
 
       </div>
@@ -566,7 +592,7 @@
     <!-- ====================================================================
          Recenze
          ==================================================================== -->
-    <section id="recenze" class="recenze" aria-labelledby="recenze-title">
+    <section id="recenze" class="recenze" aria-labelledby="recenze-title" style="padding-bottom:0">
       <div class="container">
 
         <header class="section-header section-header--center">
@@ -607,22 +633,22 @@
                 </blockquote>
                 <span class="recenze-author-name">Míša Galiová</span>
               </div>
-              <div class="recenze-slide" role="tabpanel">
-<blockquote class="recenze-text">
+              <div class="recenze-slide" role="tabpanel" style="display:none">
+                <blockquote class="recenze-text">
                   „Chodím už několik měsíců a&nbsp;pokaždé jsem moc spokojená.
                   Milý a&nbsp;profesionální přístup. Moc doporučuji."
                 </blockquote>
                 <span class="recenze-author-name">Andrea Maršálková</span>
               </div>
-              <div class="recenze-slide" role="tabpanel">
-<blockquote class="recenze-text">
+              <div class="recenze-slide" role="tabpanel" style="display:none">
+                <blockquote class="recenze-text">
                   „Paní Dana je velmi milá, profesionální a&nbsp;během ošetření vytváří krásně příjemnou atmosféru.
                   Takže jsem se cítila jako v&nbsp;luxusním wellness."
                 </blockquote>
                 <span class="recenze-author-name">Barbora Michajlov</span>
               </div>
-              <div class="recenze-slide" role="tabpanel">
-<blockquote class="recenze-text">
+              <div class="recenze-slide" role="tabpanel" style="display:none">
+                <blockquote class="recenze-text">
                   „Moc krásné prostředí, paní kosmetička je moc šikovná, milá. S&nbsp;výsledkem jsem naprosto
                   spokojená. Byla jsem edukovaná, co používat na pleť, jaký mám typ pleti, dostala jsem cenné
                   rady, jak o&nbsp;svou pleť pečovat. Určitě budu chodit pravidelně. Moc děkuji za&nbsp;krásnou péči."
@@ -638,7 +664,7 @@
 
         </div>
       </div>
-      <p class="recenze-note">Všechny reference jsou ověřené. Reference sbírám od svých klientek a&nbsp;některé z&nbsp;nich zveřejňuji.</p>
+      <p class="recenze-note" style="color:#bbb;font-size:0.85rem;text-align:center;margin-top:3rem;padding-bottom:1.5rem;max-width:none">Všechny reference jsou ověřené. Reference sbírám od svých klientek a&nbsp;některé z&nbsp;nich zveřejňuji.</p>
     </section>
 
     <!-- ====================================================================
@@ -852,6 +878,34 @@
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
+
+  <!-- Slider recenzí – inline záloha -->
+  <script>
+    (function () {
+      var avatarBtns = document.querySelectorAll('.recenze-avatar');
+      var slides     = document.querySelectorAll('.recenze-slide');
+      if (!avatarBtns.length || !slides.length) return;
+      var current = 0;
+      function show(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach(function (s, i) {
+          s.style.display = i === current ? 'flex' : 'none';
+          s.classList.toggle('active', i === current);
+        });
+        avatarBtns.forEach(function (b, i) {
+          b.classList.toggle('active', i === current);
+          b.setAttribute('aria-selected', i === current ? 'true' : 'false');
+        });
+      }
+      avatarBtns.forEach(function (btn, i) {
+        btn.addEventListener('click', function () { show(i); });
+      });
+      var prev = document.querySelector('.recenze-prev');
+      var next = document.querySelector('.recenze-next');
+      if (prev) prev.addEventListener('click', function () { show(current - 1); });
+      if (next) next.addEventListener('click', function () { show(current + 1); });
+    })();
+  </script>
 
 </body>
 </html>

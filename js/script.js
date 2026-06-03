@@ -151,7 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const showSlide = (index) => {
     currentSlide = (index + slides.length) % slides.length;
-    slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+    slides.forEach((s, i) => {
+      s.style.display = i === currentSlide ? 'flex' : 'none';
+      s.classList.toggle('active', i === currentSlide);
+    });
     avatarBtns.forEach((b, i) => {
       b.classList.toggle('active', i === currentSlide);
       b.setAttribute('aria-selected', i === currentSlide ? 'true' : 'false');
