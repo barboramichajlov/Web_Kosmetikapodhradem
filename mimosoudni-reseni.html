@@ -3,100 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mimosoudní řešení spotřebitelských sporů – Kosmetika pod hradem</title>
-  <meta name="robots" content="noindex, nofollow">
-
-  <!-- Fonty -->
+  <title>Mimosoudní řešení sporů – Kosmetika pod hradem</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://kosmetikapodhradem.cz/mimosoudni-reseni">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 
   <style>
-    :root {
-      --clr-accent:  #aa506e;
-      --clr-primary: #f4e7e8;
-      --clr-text:    #333333;
-      --font-h: 'Aboreto', serif;
-      --font-b: 'Abhaya Libre', serif;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: var(--font-b);
-      color: var(--clr-text);
+    .op-hero {
       background: var(--clr-primary);
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 3rem 2rem;
+      padding-block: var(--sp-12) var(--sp-8);
+      text-align: center;
+      margin-top: var(--nav-height);
+    }
+    .op-hero h1 { font-size: clamp(1.6rem, 4vw, 2.8rem); margin-bottom: var(--sp-2); }
+    .op-hero p { color: var(--clr-text-muted); margin-inline: auto; }
+
+    .op-content {
+      max-width: 780px;
+      margin-inline: auto;
+      padding: var(--sp-10) var(--sp-4);
     }
 
-    .card {
-      background: #fff;
-      border-radius: 1.2rem;
-      padding: 2.5rem 3rem;
-      max-width: 680px;
-      width: 100%;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      font-family: var(--font-h);
-      font-size: clamp(1.2rem, 3vw, 1.8rem);
+    .op-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
       font-weight: 400;
-      color: var(--clr-text);
-      margin-bottom: 1.5rem;
-      line-height: 1.3;
+      margin-top: var(--sp-8);
+      margin-bottom: var(--sp-3);
+      padding-bottom: var(--sp-1);
+      border-bottom: 2px solid var(--clr-primary);
+      color: var(--clr-accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
-
-    p {
+    .op-content p {
+      color: var(--clr-text-muted);
       font-size: 1rem;
-      color: #555;
       line-height: 1.8;
       max-width: none;
-      margin-bottom: 2rem;
+      margin-bottom: var(--sp-3);
     }
 
-    p a {
-      color: var(--clr-accent);
-      text-decoration: underline;
+    .op-info-box {
+      background: var(--clr-primary);
+      border-radius: var(--radius-md);
+      padding: var(--sp-4) var(--sp-5);
+      margin-bottom: var(--sp-4);
     }
+    .op-info-box p { margin-bottom: 0.4rem; color: var(--clr-text); }
+    .op-info-box p:last-child { margin-bottom: 0; }
 
-    .btn {
+    .op-back {
       display: inline-flex;
       align-items: center;
-      gap: .5rem;
-      padding: .75rem 1.8rem;
-      border-radius: 9999px;
-      font-family: var(--font-b);
-      font-size: 1rem;
+      gap: 0.5rem;
+      margin-bottom: var(--sp-6);
+      color: var(--clr-accent);
       font-weight: 700;
-      background: var(--clr-accent);
-      color: #fff;
+      font-size: 0.95rem;
       text-decoration: none;
-      transition: background .25s ease, transform .25s ease;
+      transition: color var(--transition-fast);
     }
-    .btn:hover { background: #8d3d59; transform: translateY(-2px); }
+    .op-back:hover { color: var(--clr-accent-dark); }
   </style>
 </head>
 <body>
 
-  <div class="card">
-    <h1>Mimosoudní řešení spotřebitelských sporů</h1>
-    <p>
-      Pokud by mezi mnou a vámi (pokud jste spotřebitelem) došlo ke vzniku sporu z uzavřené smlouvy
-      nebo v souvislosti s ní, máte právo podat návrh na mimosoudní řešení takového sporu subjektu
-      mimosoudního řešení spotřebitelských sporů, kterým je Česká obchodní inspekce
-      (<a href="https://adr.coi.cz" target="_blank" rel="noopener">adr.coi.cz</a>).
-    </p>
-    <a href="index.html" class="btn">← Zpět na hlavní stránku</a>
+  <header>
+    <nav id="navbar" class="navbar scrolled" aria-label="Hlavní navigace">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="Kosmetika pod hradem – domů">
+          <img src="Obrazky/Logo_Kosmetikapodhradem.png" alt="Logo Kosmetika pod hradem" width="200" height="54">
+        </a>
+        <a href="/" class="btn btn-primary" style="font-size:0.9rem;padding:.65rem 1.4rem;">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          Zpět na web
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="op-hero">
+    <div class="container">
+      <span class="section-label">Právní dokumenty</span>
+      <h1>Mimosoudní řešení spotřebitelských sporů</h1>
+      <p>Kosmetika pod hradem – Dana Janoušová</p>
+    </div>
   </div>
+
+  <main>
+    <div class="op-content">
+
+      <a href="/" class="op-back">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Zpět na hlavní stránku
+      </a>
+
+      <h2>Mimosoudní řešení sporů</h2>
+      <p>
+        Pokud by mezi mnou a vámi (pokud jste spotřebitelem) došlo ke vzniku sporu z uzavřené
+        smlouvy nebo v souvislosti s ní, máte právo podat návrh na mimosoudní řešení takového
+        sporu subjektu mimosoudního řešení spotřebitelských sporů, kterým je Česká obchodní
+        inspekce (<a href="https://adr.coi.cz" target="_blank" rel="noopener">adr.coi.cz</a>).
+      </p>
+
+      <h2>Kontaktní údaje Poskytovatele</h2>
+      <div class="op-info-box">
+        <p><strong>Dana Janoušová</strong> – Kosmetika pod hradem</p>
+        <p>Sídlo: Kamýk 29, 41201 &nbsp;|&nbsp; Provozovna: Kamýk 65, 41201</p>
+        <p>IČO: 05583900</p>
+        <p>Tel.: <a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a> &nbsp;|&nbsp; <a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a></p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" aria-label="Patička stránky">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img class="footer-logo" src="Obrazky/Logo_Kosmetikapodhradem.png" alt="Logo Kosmetika pod hradem" loading="lazy" width="200" height="52">
+          <p class="footer-brand-text">
+            Profesionální kosmetický salon v&nbsp;Kamýku. Péče o&nbsp;pleť, maderoterapie,
+            masáže a&nbsp;epilace. Přijďte zažít krásu a&nbsp;relax.
+          </p>
+          <div class="footer-dana">
+            <img src="Obrazky/Dana_Janousova/Dana3.jpg" alt="Dana Janoušová – kosmetička" loading="lazy" width="160" height="160">
+            <span>Dana Janoušová</span>
+          </div>
+          <div style="display:flex;gap:2rem;margin-top:1.5rem;">
+            <a href="https://www.facebook.com/profile.php?id=61559445611771" target="_blank" rel="noopener" aria-label="Facebook" style="color:rgba(255,255,255,0.5);font-size:1.4rem;text-decoration:none;"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kosmetikapodhradem/" target="_blank" rel="noopener" aria-label="Instagram" style="color:rgba(255,255,255,0.5);font-size:1.4rem;text-decoration:none;"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav aria-label="Patičková navigace">
+          <div class="footer-col-title">Navigace</div>
+          <ul class="footer-nav" role="list">
+            <li><a href="/#sluzby">Služby</a></li>
+            <li><a href="/#cenik">Ceník</a></li>
+            <li><a href="/#darkove-poukazy">Dárkové poukazy</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            <li><a href="/#recenze">Recenze</a></li>
+            <li><a href="/#o-mne">O&nbsp;mně</a></li>
+            <li><a href="/#objednat-se">Objednat se</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <div class="footer-col-title">Kontakt</div>
+          <div class="footer-contact-line"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Dana Janoušová</span></div>
+          <div class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <address style="font-style:normal;">
+              <a href="https://maps.app.goo.gl/ysEH3Fm4JaCG6psz8" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.65);">Provozovna: Kamýk 65, 41201</a><br>
+              <span style="font-size:0.82rem;opacity:0.65;">Sídlo: Kamýk 29, 41201</span>
+            </address>
+          </div>
+          <div class="footer-contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a></div>
+          <div class="footer-contact-line"><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a></div>
+          <div class="footer-contact-line" style="margin-top:var(--sp-2)"><i class="fa-solid fa-building" aria-hidden="true"></i><span>IČO:&nbsp;05583900</span></div>
+          <div class="footer-contact-line"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Fyzická osoba zapsaná v&nbsp;živnostenském rejstříku</span></div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom" style="flex-direction:column;align-items:center;gap:0.5rem;text-align:center;">
+        <p>&copy; 2026 Kosmetika pod hradem – Dana Janoušová. Všechna práva vyhrazena.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem;">
+          <p class="footer-ico"><a href="/mimosoudni-reseni" style="color:inherit;text-decoration:underline;">Mimosoudní řešení spotřebitelských sporů</a></p>
+          <p class="footer-ico"><a href="/cookies" style="color:inherit;text-decoration:underline;">Zásady používání cookies</a></p>
+          <p class="footer-ico"><a href="/obchodni-podminky" style="color:inherit;text-decoration:underline;">Obchodní podmínky</a></p>
+          <p class="footer-ico"><a href="#" style="color:inherit;text-decoration:underline;">Zásady zpracování osobních údajů (GDPR)</a></p>
+        </div>
+        <p class="footer-ico">Fotografie: Freepik | Ilustrace: Canva</p>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 </html>
