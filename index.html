@@ -50,6 +50,7 @@
       .nav-logo{margin-left:1rem}
       .o-mne{padding-bottom:2rem!important}
       .statistiky{padding-top:2rem!important}
+      .recenze-nav-btn{margin-top:8rem!important}
     }
     @media(min-width:1024px){
       #hamburger{display:none!important}
@@ -183,18 +184,27 @@
     <section class="hero" id="uvod" aria-label="Uvítací sekce">
 
       <!-- Pozadí hero sekce -->
-      <img class="hero-bg" src="Obrazky/Hlavni/Salon2.jpg" alt="" aria-hidden="true" fetchpriority="high">
+      <picture>
+        <source media="(max-width: 640px)" srcset="Obrazky/Hlavni/Salon2%20-%20mobil.jpg">
+        <img class="hero-bg" src="Obrazky/Hlavni/Salon2.jpg" alt="" aria-hidden="true" fetchpriority="high">
+      </picture>
 
       <!-- Barevný overlay -->
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <!-- Obsah -->
       <div class="hero-content">
-        <div class="hero-logo">
-          <img src="Obrazky/Logo_Kosmetikapodhradem.png" alt="Kosmetika pod hradem" width="240" height="65">
-        </div>
         <h1>Kosmetika pod hradem</h1>
         <p class="hero-subtitle">Péče&nbsp;o sebe není výdaj&nbsp;— je to&nbsp;investice</p>
+        <div style="display:flex;gap:2rem;justify-content:center;margin-top:-0.5rem;margin-bottom:1.5rem;">
+          <a href="https://www.facebook.com/profile.php?id=61559445611771" target="_blank" rel="noopener" aria-label="Facebook" style="color:#fff;font-size:1.5rem;text-decoration:none;">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/kosmetikapodhradem/" target="_blank" rel="noopener" aria-label="Instagram" style="color:#fff;font-size:1.5rem;text-decoration:none;">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+
         <div class="hero-actions">
           <a href="#objednat-se" class="btn btn-primary">
             <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
@@ -465,10 +475,26 @@
 
         </div>
 
-        <p class="cenik-note reveal" style="text-align:center;margin-top:var(--sp-3);">
+        <p class="cenik-note reveal" style="text-align:left;margin-top:var(--sp-3);max-width:none;margin-left:0;">
           <i class="fa-solid fa-circle-info" aria-hidden="true" style="margin-right:.4rem"></i>
           * Masáž je v&nbsp;ceně každého kosmetického ošetření, kromě čisticího ošetření.
         </p>
+
+        <div class="reveal" style="margin-top:var(--sp-5);display:flex;justify-content:center;">
+          <div style="background:rgba(255,255,255,0.85);border:1px solid rgba(198,179,175,0.4);border-radius:var(--radius-lg);padding:1.5rem 2rem;text-align:center;box-shadow:var(--shadow-sm);">
+            <p style="font-size:1rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--clr-text);margin-bottom:var(--sp-3);font-weight:600;">Možnosti platby</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+              <div style="display:flex;align-items:center;gap:0.6rem;background:var(--clr-bg);border:1px solid rgba(198,179,175,0.4);border-radius:999px;padding:0.5rem 1.2rem;">
+                <i class="fa-solid fa-money-bill-wave" style="color:var(--clr-accent);font-size:1.1rem;" aria-hidden="true"></i>
+                <span style="font-size:0.95rem;font-weight:600;">Hotovost</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.6rem;background:var(--clr-bg);border:1px solid rgba(198,179,175,0.4);border-radius:999px;padding:0.5rem 1.2rem;">
+                <i class="fa-solid fa-qrcode" style="color:var(--clr-accent);font-size:1.1rem;" aria-hidden="true"></i>
+                <span style="font-size:0.95rem;font-weight:600;">QR kód</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div style="text-align:center;margin-top:var(--sp-5);" class="reveal">
           <a href="#objednat-se" class="btn btn-primary">
@@ -832,6 +858,14 @@
               width="160" height="160">
             <span>Dana Janoušová</span>
           </div>
+          <div style="display:flex;gap:2rem;margin-top:1.5rem;">
+            <a href="https://www.facebook.com/profile.php?id=61559445611771" target="_blank" rel="noopener" aria-label="Facebook" style="color:rgba(255,255,255,0.5);font-size:1.4rem;text-decoration:none;">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/kosmetikapodhradem/" target="_blank" rel="noopener" aria-label="Instagram" style="color:rgba(255,255,255,0.5);font-size:1.4rem;text-decoration:none;">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
 
         <!-- Rychlá navigace -->
@@ -868,21 +902,29 @@
             <a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a>
           </div>
           <div class="footer-contact-line" style="margin-top:var(--sp-2)">
-            <i class="fa-regular fa-clock" aria-hidden="true"></i>
-            <span>Po–Pá 8:00–19:00</span>
-          </div>
-          <div class="footer-contact-line" style="margin-top:var(--sp-2)">
             <i class="fa-solid fa-building" aria-hidden="true"></i>
             <span>IČO:&nbsp;05583900</span>
+          </div>
+          <div class="footer-contact-line">
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+            <span>Fyzická osoba zapsaná v&nbsp;živnostenském rejstříku</span>
           </div>
         </div>
 
       </div>
 
       <!-- Spodní lišta -->
-      <div class="footer-bottom">
+      <div class="footer-bottom" style="flex-direction:column;align-items:center;gap:0.5rem;text-align:center;">
+        <!-- Řádek 1 -->
         <p>&copy; 2026 Kosmetika pod hradem – Dana Janoušová. Všechna práva vyhrazena.</p>
-        <p class="footer-ico">IČO:&nbsp;05583900 | Zapsáno v&nbsp;Živnostenském rejstříku</p>
+        <!-- Řádek 2 -->
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem;">
+          <p class="footer-ico"><a href="mimosoudni-reseni.html" style="color:inherit;text-decoration:underline;">Mimosoudní řešení spotřebitelských sporů</a></p>
+          <p class="footer-ico"><a href="cookies.html" style="color:inherit;text-decoration:underline;">Zásady používání cookies</a></p>
+          <p class="footer-ico"><a href="#" style="color:inherit;text-decoration:underline;">Obchodní podmínky</a></p>
+          <p class="footer-ico"><a href="#" style="color:inherit;text-decoration:underline;">Zásady zpracování osobních údajů (GDPR)</a></p>
+        </div>
+        <!-- Řádek 3 -->
         <p class="footer-ico">Fotografie: Freepik | Ilustrace: Canva</p>
       </div>
 
@@ -917,6 +959,27 @@
       var next = document.querySelector('.recenze-next');
       if (prev) prev.addEventListener('click', function () { show(current - 1); });
       if (next) next.addEventListener('click', function () { show(current + 1); });
+    })();
+  </script>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Zpět nahoru" style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;width:44px;height:44px;border-radius:50%;background:var(--clr-accent);color:#fff;border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 4px 12px rgba(0,0,0,0.2);transition:opacity 0.3s,transform 0.3s;">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+  <script>
+    (function(){
+      var btn = document.getElementById('back-to-top');
+      if(!btn) return;
+      window.addEventListener('scroll', function(){
+        if(window.scrollY > 400){
+          btn.style.display = 'flex';
+        } else {
+          btn.style.display = 'none';
+        }
+      }, {passive:true});
+      btn.addEventListener('click', function(){
+        window.scrollTo({top:0, behavior:'smooth'});
+      });
     })();
   </script>
 

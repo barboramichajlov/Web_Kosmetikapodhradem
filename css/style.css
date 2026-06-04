@@ -199,10 +199,10 @@ section { padding-block: var(--sp-10); }
 .nav-logo img {
   height: 54px;
   width: auto;
-  transition: transform var(--transition);
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+  transition: transform var(--transition), filter var(--transition);
+  filter: brightness(0) invert(1);
 }
-.navbar.scrolled .nav-logo img { filter: none; }
+.navbar.scrolled .nav-logo img { filter: brightness(0); }
 .nav-logo img:hover { transform: scale(1.04); }
 
 .nav-link {
@@ -758,6 +758,7 @@ section { padding-block: var(--sp-10); }
   gap: var(--sp-3);
 }
 .recenze-nav-btn { margin-top: 4rem; }
+@media (max-width: 1023px) { .recenze-nav-btn { margin-top: 8rem; } }
 
 .recenze-slides {
   flex: 1;

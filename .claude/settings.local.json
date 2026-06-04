@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(Get-Content \"c:\\\\Users\\\\bvejl\\\\Desktop\\\\VC weby\\\\Kosmetika pod hradem\\\\Web_Kosmetikapodhradem\\\\js\\\\script.js\" | Select-Object -Skip 154 -First 26 | ForEach-Object { \"`\"$_`\"\" })",
-      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\bvejl\\\\Desktop\\\\VC weby\\\\Kosmetika pod hradem\\\\Web_Kosmetikapodhradem\\\\Obrazky\\\\Hlavni\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,0\\)}})"
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\bvejl\\\\Desktop\\\\VC weby\\\\Kosmetika pod hradem\\\\Web_Kosmetikapodhradem\\\\Obrazky\\\\Hlavni\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,0\\)}})",
+      "WebFetch(domain:mamtovpohode.cz)"
     ]
   }
 }
