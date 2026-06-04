@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="robots" content="noindex, nofollow">
+
   <!-- SEO: title a description -->
   <title>Kosmetika pod hradem – Dana Janoušová | Kosmetický salon Kamýk</title>
   <meta name="description" content="Profesionální kosmetické ošetření, maderoterapie, masáže a epilace obličeje v Kamýku. Dana Janoušová. Objednejte se na +420&nbsp;725&nbsp;816&nbsp;813.">
@@ -30,13 +32,19 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" type="image/png" href="/Obrazky/favicon.png">
 
-  <!-- Fonty Google -->
+  <!-- Preload hero obrázků -->
+  <link rel="preload" as="image" href="Obrazky/Hlavni/Salon2.jpg" media="(min-width: 641px)">
+  <link rel="preload" as="image" href="Obrazky/Hlavni/Salon2%20-%20mobil.jpg" media="(max-width: 640px)">
+
+  <!-- Fonty Google – asynchronně -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Font Awesome 6 – asynchronně -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
 
   <!-- Hlavní stylesheet -->
   <link rel="stylesheet" href="css/style.css">
