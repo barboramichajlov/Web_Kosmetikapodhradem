@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zásady zpracování osobních údajů – Kosmetika pod hradem</title>
+  <meta name="description" content="Zásady zpracování osobních údajů kosmetického salonu Kosmetika pod hradem – Dana Janoušová.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://kosmetikapodhradem.cz/gdpr">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .op-hero {
+      background: var(--clr-primary);
+      padding-block: var(--sp-12) var(--sp-8);
+      text-align: center;
+      margin-top: var(--nav-height);
+    }
+    .op-hero h1 { font-size: clamp(1.6rem, 4vw, 2.8rem); margin-bottom: var(--sp-2); }
+    .op-hero p { color: var(--clr-text-muted); margin-inline: auto; }
+
+    .op-content {
+      max-width: 780px;
+      margin-inline: auto;
+      padding: var(--sp-10) var(--sp-4);
+    }
+
+    .op-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 400;
+      margin-top: var(--sp-8);
+      margin-bottom: var(--sp-3);
+      padding-bottom: var(--sp-1);
+      border-bottom: 2px solid var(--clr-primary);
+      color: var(--clr-accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .op-content h3 {
+      font-family: var(--font-heading);
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+      font-weight: 400;
+      margin-top: var(--sp-5);
+      margin-bottom: var(--sp-2);
+      color: var(--clr-text);
+    }
+    .op-content p {
+      color: var(--clr-text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: none;
+      margin-bottom: var(--sp-3);
+    }
+    .op-content ul {
+      list-style: none;
+      padding-left: var(--sp-3);
+      margin-bottom: var(--sp-3);
+    }
+    .op-content ul li {
+      position: relative;
+      padding-left: var(--sp-3);
+      color: var(--clr-text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+    .op-content ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--clr-accent);
+    }
+
+    .op-info-box {
+      background: var(--clr-primary);
+      border-radius: var(--radius-md);
+      padding: var(--sp-4) var(--sp-5);
+      margin-bottom: var(--sp-4);
+    }
+    .op-info-box p { margin-bottom: 0.4rem; color: var(--clr-text); }
+    .op-info-box p:last-child { margin-bottom: 0; }
+
+    .op-toc {
+      background: var(--clr-primary);
+      border-radius: var(--radius-md);
+      padding: var(--sp-4) var(--sp-5);
+      margin-bottom: var(--sp-6);
+      counter-reset: toc;
+    }
+    .op-toc p { margin-bottom: 0.3rem; color: var(--clr-text); font-size: 0.97rem; }
+    .op-toc p:last-child { margin-bottom: 0; }
+
+    .op-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: var(--sp-6);
+      color: var(--clr-accent);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    .op-back:hover { color: var(--clr-accent-dark); }
+
+    @media (max-width: 600px) {
+      .op-info-box { padding: var(--sp-3) var(--sp-4); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav id="navbar" class="navbar scrolled" aria-label="Hlavní navigace">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="Kosmetika pod hradem – domů">
+          <img src="Obrazky/Logo_Kosmetikapodhradem.png" alt="Logo Kosmetika pod hradem" width="200" height="54">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="op-hero">
+    <div class="container">
+      <span class="section-label">Právní dokumenty</span>
+      <h1>Zásady zpracování osobních údajů</h1>
+      <p>Kosmetika pod hradem – Dana Janoušová &nbsp;|&nbsp; Účinné od 6.&nbsp;1.&nbsp;2022</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="op-content">
+
+      <a href="/" class="op-back">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Zpět na hlavní stránku
+      </a>
+
+      <p>
+        Níže naleznete zásady zpracování osobních údajů, které nám jako správci poskytnete,
+        pokud navštívíte naše webové stránky dostupné na adrese
+        <strong>kosmetikapodhradem.cz</strong>, dále pokud jste našimi zákazníky nebo
+        zájemci o naše služby.
+      </p>
+      <p>
+        Osobní údaje zpracováváme v souladu s platnými a účinnými právními předpisy,
+        zejména v souladu s nařízením Evropského parlamentu a Rady (EU) 2016/679 –
+        obecné nařízení o ochraně osobních údajů (dále jen „GDPR") a v souladu se zákonem
+        č. 110/2019 Sb., o zpracování osobních údajů.
+      </p>
+      <p>
+        Účelem tohoto dokumentu je seznámit Vás s tím, jak bude s Vašimi osobními údaji
+        nakládáno, a informovat Vás o Vašich právech.
+      </p>
+
+      <div class="op-toc">
+        <p><strong>Obsah:</strong></p>
+        <p>I. Správce osobních údajů</p>
+        <p>II. Zdroj osobních údajů</p>
+        <p>III. Zpracovávané osobní údaje</p>
+        <p>IV. Účely a doba zpracování</p>
+        <p>V. Automatizované rozhodování a profilování</p>
+        <p>VI. Cookies</p>
+        <p>VII. Příjemci osobních údajů</p>
+        <p>VIII. Předávání osobních údajů do třetí země</p>
+        <p>IX. Zabezpečení osobních údajů</p>
+        <p>X. Vaše práva</p>
+        <p>XI. Závěrečná ustanovení</p>
+      </div>
+
+
+      <!-- ============================================================ -->
+      <h2>I. Správce osobních údajů</h2>
+
+      <p>Správcem osobních údajů je:</p>
+      <div class="op-info-box">
+        <p><strong>Dana Janoušová</strong> – Kosmetika pod hradem</p>
+        <p>Zapsaná v živnostenském rejstříku (příslušným je Městský úřad v Litoměřicích)</p>
+        <p>IČO: 05583900</p>
+        <p>Sídlo: Kamýk 29, 41201 &nbsp;|&nbsp; Provozovna: Kamýk 65, 41201</p>
+        <p>Telefon: <a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a></p>
+        <p>E-mail: <a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a></p>
+      </div>
+
+
+      <!-- ============================================================ -->
+      <h2>II. Zdroj osobních údajů</h2>
+
+      <p>
+        Zpracováváme osobní údaje, které získáme přímo od Vás. Vaše osobní údaje získáváme
+        tím, že navštívíte naše webové stránky, že nás kontaktujete telefonicky nebo e-mailem,
+        že si zarezervujete termín prostřednictvím rezervačního systému Notino, nebo jiným
+        způsobem (např. při osobním jednání v provozovně nebo prostřednictvím sociálních sítí).
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>III. Zpracovávané osobní údaje</h2>
+
+      <p>
+        V nezbytném rozsahu o Vás zpracováváme zejména následující běžné osobní údaje,
+        pokud nám je zpřístupníte: jméno a příjmení, telefonní číslo, e-mailová adresa,
+        informace o Vámi objednaných službách a termínech a další informace, které nám
+        v průběhu naší komunikace či spolupráce poskytnete.
+      </p>
+      <p>
+        Pokud nám umožníte zveřejnit Vaši referenci, a případně nám také poskytnete svou
+        fotografii, zpracováváme o Vás rovněž osobní údaje uvedené v referenci a příslušnou
+        fotografii.
+      </p>
+      <p>
+        Pokud využijete možnosti přihlášení, diskuze, hodnocení nebo sdílení prostřednictvím
+        sociálních sítí (Facebook, Instagram, příp. další), zpracováváme o Vás také informace
+        uvedené ve Vašem příspěvku či komentáři a veřejné informace na Vašem profilu v příslušné
+        sociální síti (zejm. jméno a příjmení, fotografie, věková kategorie a další veřejné
+        informace podle Vašeho nastavení).
+      </p>
+      <p>
+        Poskytnutí osobních údajů uvedených v odstavci 1 tohoto článku je nezbytné pro
+        vzájemnou komunikaci nebo pro uzavření a splnění smlouvy; v případě jejich neposkytnutí
+        tedy nebude možné vzájemně komunikovat nebo uzavřít a splnit smlouvu. V případech, kdy
+        zpracování osobních údajů je založeno na Vašem souhlasu, závisí pouze na Vašem
+        rozhodnutí, zda nám své osobní údaje poskytnete či nikoli.
+      </p>
+      <p>
+        Zvláštní kategorie osobních údajů (citlivé údaje), jako jsou informace o zdravotním
+        stavu nebo alergiích, o Vás zpracováváme jen tehdy, pokud nám tyto údaje v průběhu
+        naší spolupráce dobrovolně sdělíte a jen s Vaším výslovným souhlasem, a to výhradně
+        za účelem bezpečného provedení kosmetického ošetření.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>IV. Účely a doba zpracování</h2>
+
+      <h3>A. Uzavření a splnění smlouvy</h3>
+      <p>
+        Vaše osobní údaje zpracováváme pro účely uzavření smlouvy a splnění mezi námi uzavřené
+        smlouvy (vzájemná komunikace před i po uzavření smlouvy, rezervace a poskytnutí
+        kosmetické služby). K tomuto účelu zpracováváme Vaše běžné osobní údaje uvedené
+        v čl. III odst. 1 výše.
+      </p>
+      <p>
+        Právním titulem pro zpracování osobních údajů je splnění smlouvy uzavřené mezi námi
+        a provedení opatření přijatých před uzavřením smlouvy na Vaši žádost.
+      </p>
+      <p>
+        K tomuto účelu Vaše osobní údaje zpracováváme po dobu trvání smluvního vztahu mezi
+        námi a po jeho skončení pak za jinými účely (viz písm. B až E níže).
+      </p>
+
+      <h3>B. Splnění právních povinností</h3>
+      <p>
+        Osobní údaje zpracováváme dále pro účely splnění právních povinností, které se na nás
+        vztahují (např. zákonné povinnosti v oblasti daní). K tomuto účelu zpracováváme tyto
+        Vaše osobní údaje: jméno a příjmení a informace o Vámi objednaných službách.
+      </p>
+      <p>
+        Právním titulem pro zpracování osobních údajů je splnění právní povinnosti, která se
+        na nás vztahuje. K tomuto účelu Vaše osobní údaje zpracováváme po dobu stanovenou
+        obecně závaznými právními předpisy.
+      </p>
+
+      <h3>C. Veřejná prezentace</h3>
+      <p>
+        Z provozu salonu mohou být pořizovány fotografie za účelem naší propagace a prezentace
+        našich služeb na webových stránkách a sociálních sítích. Pokud se na fotografiích
+        nechcete objevit, stačí nám tuto skutečnost sdělit a fotografovat Vás nebudeme.
+      </p>
+      <p>
+        Právním titulem je náš oprávněný zájem. K tomuto účelu Vaše osobní údaje zpracováváme
+        po dobu zveřejnění příslušné fotografie.
+      </p>
+
+      <h3>D. Ochrana práv a vymáhání nároků</h3>
+      <p>
+        Osobní údaje zpracováváme i pro účely ochrany našich práv a vymáhání právních nároků.
+        Právním titulem je náš oprávněný zájem. K tomuto účelu Vaše osobní údaje zpracováváme
+        po dobu trvání smluvního vztahu a následující 4 roky po jeho ukončení, nebo po dobu
+        4 let od našeho posledního kontaktu, pokud k uzavření smlouvy nedošlo, a v případě
+        vzniku sporu rovněž po celou dobu trvání sporu až do jeho pravomocného skončení.
+      </p>
+
+      <h3>E. Zpracování na základě Vašeho souhlasu</h3>
+      <p>Na základě Vašeho souhlasu budeme Vaše osobní údaje zpracovávat k následujícím účelům:</p>
+      <ul>
+        <li>zveřejnění Vaší reference na našich webových stránkách nebo sociálních sítích,</li>
+        <li>zveřejnění Vaší fotografie na našich webových stránkách nebo sociálních sítích,</li>
+        <li>zpracování citlivých osobních údajů (zdravotní stav, alergie) za účelem bezpečného provedení ošetření,</li>
+        <li>diskuze, hodnocení nebo sdílení informací prostřednictvím sociálních sítí.</li>
+      </ul>
+      <p>
+        Souhlas nám můžete udělit v průběhu individuální komunikace (např. e-mailem nebo
+        telefonicky), v listinné podobě při návštěvě salonu, vložením příspěvku, komentáře
+        nebo reakce na příspěvek či komentář v sociální síti, případně jiným způsobem.
+        Před udělením souhlasu Vás budeme informovat, které osobní údaje budeme na základě
+        Vašeho souhlasu zpracovávat a k jakému konkrétnímu účelu zpracování se bude Váš
+        souhlas vztahovat.
+      </p>
+      <p>
+        Svůj souhlas můžete kdykoli odvolat oznámením na naši e-mailovou adresu. Pokud Vaše
+        osobní údaje zpracováváme i na základě jiných právních titulů, budeme je na základě
+        příslušného titulu zpracovávat i po odvolání Vašeho souhlasu.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>V. Automatizované rozhodování a profilování</h2>
+
+      <p>
+        Z naší strany nedochází k automatizovanému individuálnímu rozhodování ve smyslu
+        čl. 22 GDPR ani k profilování Vašich osobních údajů.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>VI. Cookies</h2>
+
+      <p>
+        Při užívání webových stránek používáme cookies. Podrobné informace o tom, které cookies
+        používáme a k jakým účelům, naleznete v našich
+        <a href="/cookies">Zásadách používání cookies</a>.
+      </p>
+      <p>
+        Naše webové stránky <strong>nepoužívají</strong> žádné analytické ani marketingové
+        cookies třetích stran, a proto k jejich použití nepotřebujeme Váš souhlas.
+        Technické cookies (Google Fonts) lze případně zablokovat v nastavení Vašeho
+        internetového prohlížeče, avšak upozorňujeme, že toto může omezit správné
+        zobrazení webových stránek.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>VII. Příjemci osobních údajů</h2>
+
+      <p>
+        Pokud Vaše osobní údaje sdílíme s jinou osobou, dbáme na to, aby byla zajištěna
+        jejich ochrana. S příjemci osobních údajů máme uzavřeny příslušné smlouvy
+        podle GDPR. Konkrétně se jedná o tyto příjemce:
+      </p>
+      <ul>
+        <li>webhosting a doména: Webkitty (Webkitty s.r.o.),</li>
+        <li>rezervační systém: Notino (NOTINO, s.r.o.),</li>
+        <li>sociální sítě: Facebook a Instagram (Meta Platforms, Inc.),</li>
+        <li>účetní,</li>
+        <li>IT firma (správa a vývoj webových stránek).</li>
+      </ul>
+      <p>
+        K Vašim osobním údajům mají přístup také další uživatelé sociálních sítí, kam
+        vkládáte příspěvky, komentáře či reakce. Využitím těchto možností vyslovujete
+        s tímto sdílením svých osobních údajů souhlas.
+      </p>
+      <p>
+        Vaše osobní údaje budou zpřístupněny i příslušným správním orgánům nebo soudům,
+        abychom splnili svou zákonnou povinnost nebo ochránili svá práva a oprávněné zájmy.
+      </p>
+      <p>
+        Pokud by v budoucnu došlo k využívání dalších aplikací nebo služeb jiných osob,
+        budeme při jejich výběru dbát na to, aby byl zachován náš standard zabezpečení
+        a zpracování osobních údajů.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>VIII. Předávání osobních údajů do třetí země</h2>
+
+      <p>
+        Jelikož využíváme některé zahraniční zpracovatele, mohou být Vaše osobní údaje
+        předávány do třetích zemí, a to do Spojených států amerických. Dne 10.&nbsp;7.&nbsp;2023
+        přijala Evropská komise rozhodnutí o odpovídající úrovni ochrany osobních údajů ve
+        smyslu čl. 45 odst. 3 GDPR. Naši zpracovatelé Meta Platforms, Inc. a Google LLC jsou
+        zapsáni na příslušném seznamu (Data Privacy Framework List), čímž je zajištěna
+        odpovídající úroveň ochrany Vašich osobních údajů.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>IX. Zabezpečení osobních údajů</h2>
+
+      <p>
+        Jako správce jsme přijali veškerá technická a organizační opatření k zabezpečení
+        Vašich osobních údajů, aby nemohlo dojít k náhodnému nebo protiprávnímu přístupu
+        k Vašim osobním údajům, k jejich změně, zničení či ztrátě, k jejich neoprávněnému
+        zpracování či k jejich jinému zneužití.
+      </p>
+      <p>K zabezpečení Vašich osobních údajů jsme přijali zejména tato opatření:</p>
+      <ul>
+        <li>ochrana přístupu k výpočetní technice individuálními silnými hesly a ochrana těchto hesel před vyzrazením,</li>
+        <li>ochrana výpočetní techniky antivirovými programy,</li>
+        <li>uzamykání prostor, v nichž jsou uloženy dokumenty s osobními údaji,</li>
+        <li>svěření přístupu k osobním údajům pouze pověřeným osobám, které jsou vázány povinností zachovávat mlčenlivost.</li>
+      </ul>
+      <p>
+        Zavedená technická a organizační opatření jsou pravidelně hodnocena z hlediska
+        jejich účinnosti pro zajištění bezpečnosti zpracování osobních údajů.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>X. Vaše práva</h2>
+
+      <p>Ve vztahu ke zpracování osobních údajů máte následující práva:</p>
+
+      <h3>Právo na přístup k osobním údajům (čl. 15 GDPR)</h3>
+      <p>
+        Máte právo získat informaci, zda Vaše osobní údaje jsou či nejsou zpracovávány,
+        a pokud zpracovávány jsou, máte právo na přístup k nim a na podrobnosti
+        týkající se jejich zpracování.
+      </p>
+
+      <h3>Právo na opravu, resp. doplnění osobních údajů (čl. 16 GDPR)</h3>
+      <p>
+        Máte právo požadovat, abychom opravili nepřesné osobní údaje, které se Vás týkají,
+        a s přihlédnutím k účelům zpracování máte rovněž právo na doplnění neúplných osobních údajů.
+      </p>
+
+      <h3>Právo na výmaz osobních údajů (čl. 17 GDPR)</h3>
+      <p>
+        Máte právo požadovat, abychom vymazali osobní údaje, které se Vás týkají, pokud je
+        dán některý z důvodů uvedených v čl. 17 GDPR.
+      </p>
+
+      <h3>Právo na omezení zpracování osobních údajů (čl. 18 GDPR)</h3>
+      <p>
+        Jsou-li splněny podmínky stanovené v čl. 18 GDPR, máte právo na to, abychom omezili
+        zpracování Vašich osobních údajů.
+      </p>
+
+      <h3>Právo na přenositelnost osobních údajů (čl. 20 GDPR)</h3>
+      <p>
+        Pokud je zpracování Vašich osobních údajů prováděno automatizovaně a zároveň je
+        založeno na souhlasu nebo na smlouvě, máte právo získat své osobní údaje ve
+        strukturovaném, běžně používaném a strojově čitelném formátu.
+      </p>
+
+      <h3>Právo vznést námitku proti zpracování osobních údajů (čl. 21 GDPR)</h3>
+      <p>
+        Za podmínek uvedených v čl. 21 GDPR máte právo kdykoli vznést námitku proti
+        zpracování osobních údajů.
+      </p>
+
+      <h3>Právo odvolat souhlas se zpracováním osobních údajů</h3>
+      <p>
+        Pokud jsou osobní údaje zpracovávány na základě Vašeho souhlasu, máte právo
+        kdykoli svůj souhlas odvolat. Odvoláním souhlasu není dotčena zákonnost zpracování
+        založená na dříve uděleném souhlasu.
+      </p>
+
+      <h3>Právo podat stížnost k Úřadu pro ochranu osobních údajů</h3>
+      <p>
+        V případě, že se domníváte, že bylo porušeno Vaše právo na ochranu osobních údajů,
+        máte právo podat stížnost k Úřadu pro ochranu osobních údajů
+        (<a href="https://uoou.gov.cz" target="_blank" rel="noopener">uoou.gov.cz</a>).
+      </p>
+
+      <p>
+        Svá práva můžete u nás uplatnit prostřednictvím kontaktů uvedených v čl. I těchto
+        zásad. Před vyřízením Vaší žádosti Vás můžeme kontaktovat za účelem přiměřeného
+        ověření Vaší totožnosti.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>XI. Závěrečná ustanovení</h2>
+
+      <p>
+        Tyto zásady zpracování osobních údajů jsme oprávněni v přiměřeném rozsahu změnit.
+        Jejich aktuální znění naleznete na našich webových stránkách.
+      </p>
+      <p><strong>Tyto zásady zpracování osobních údajů nabývají účinnosti dnem 6.&nbsp;1.&nbsp;2022.</strong></p>
+
+    </div>
+  </main>
+
+  <footer id="kontakt" class="footer" aria-label="Patička stránky">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img class="footer-logo" src="Obrazky/Logo_Kosmetikapodhradem.png" alt="Logo Kosmetika pod hradem" loading="lazy" width="200" height="52">
+          <p class="footer-brand-text">
+            Profesionální kosmetický salon v&nbsp;Kamýku. Péče o&nbsp;pleť, maderoterapie,
+            masáže a&nbsp;epilace. Přijďte zažít krásu a&nbsp;relax.
+          </p>
+          <div class="footer-dana">
+            <img src="Obrazky/Dana_Janousova/Dana3.jpg" alt="Dana Janoušová – kosmetička" loading="lazy" width="160" height="160">
+            <span>Dana Janoušová</span>
+          </div>
+          <div style="display:flex;gap:2rem;margin-top:1.5rem;">
+            <a href="https://www.facebook.com/profile.php?id=61559445611771" target="_blank" rel="noopener" aria-label="Facebook" style="color:rgba(255,255,255,0.5);font-size:1.4rem;text-decoration:none;"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/kosmetikapodhradem/" target="_blank" rel="noopener" aria-label="Instagram" style="color:rgba(255,255,255,0.5);font-size:1.4rem;text-decoration:none;"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav aria-label="Patičková navigace">
+          <div class="footer-col-title">Navigace</div>
+          <ul class="footer-nav" role="list">
+            <li><a href="/#sluzby">Služby</a></li>
+            <li><a href="/#cenik">Ceník</a></li>
+            <li><a href="/#darkove-poukazy">Dárkové poukazy</a></li>
+            <li><a href="/#galerie">Galerie</a></li>
+            <li><a href="/#recenze">Recenze</a></li>
+            <li><a href="/#o-mne">O&nbsp;mně</a></li>
+            <li><a href="/#objednat-se">Objednat se</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <div class="footer-col-title">Kontakt</div>
+          <div class="footer-contact-line"><i class="fa-solid fa-user" aria-hidden="true"></i><span>Dana Janoušová</span></div>
+          <div class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <address style="font-style:normal;">
+              <a href="https://maps.app.goo.gl/ysEH3Fm4JaCG6psz8" target="_blank" rel="noopener">Adresa salonu: Kamýk 65, 41201</a><br>
+              <span style="font-size:0.82rem;opacity:0.65;">Sídlo: Kamýk 29, 41201</span>
+            </address>
+          </div>
+          <div class="footer-contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a></div>
+          <div class="footer-contact-line"><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a></div>
+          <div class="footer-contact-line" style="margin-top:var(--sp-2)"><i class="fa-solid fa-building" aria-hidden="true"></i><span>IČO:&nbsp;05583900</span></div>
+          <div class="footer-contact-line"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Fyzická osoba zapsaná v&nbsp;živnostenském rejstříku</span></div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom" style="flex-direction:column;align-items:center;gap:0.5rem;text-align:center;">
+        <p>&copy; 2026 Kosmetika pod hradem – Dana Janoušová. Všechna práva vyhrazena.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem;">
+          <p class="footer-ico"><a href="/mimosoudni-reseni" style="color:inherit;text-decoration:underline;">Mimosoudní řešení spotřebitelských sporů</a></p>
+          <p class="footer-ico"><a href="/cookies" style="color:inherit;text-decoration:underline;">Zásady používání cookies</a></p>
+          <p class="footer-ico"><a href="/obchodni-podminky" style="color:inherit;text-decoration:underline;">Obchodní podmínky</a></p>
+          <p class="footer-ico"><a href="/gdpr" style="color:inherit;text-decoration:underline;">Zásady zpracování osobních údajů (GDPR)</a></p>
+        </div>
+        <p class="footer-ico">Fotografie: Freepik | Ilustrace: Canva</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
