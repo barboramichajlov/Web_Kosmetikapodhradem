@@ -623,7 +623,7 @@ section { padding-block: var(--sp-10); }
   padding: var(--sp-3) var(--sp-4);
   margin-bottom: var(--sp-4);
 }
-.poukaz-info-box h4 { font-family: var(--font-body); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--clr-accent); margin-bottom: var(--sp-1); }
+.poukaz-info-box h3 { font-family: var(--font-body); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--clr-accent); margin-bottom: var(--sp-1); }
 .poukaz-info-box p { font-size: 1rem; color: var(--clr-text); max-width: none; }
 
 /* --------------------------------------------------------------------------
