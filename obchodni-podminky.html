@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obchodní podmínky – Kosmetika pod hradem</title>
+  <meta name="description" content="Všeobecné obchodní podmínky kosmetického salonu Kosmetika pod hradem – Dana Janoušová, Kamýk 65.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://kosmetikapodhradem.cz/obchodni-podminky">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .op-hero {
+      background: var(--clr-primary);
+      padding-block: var(--sp-12) var(--sp-8);
+      text-align: center;
+      margin-top: var(--nav-height);
+    }
+    .op-hero h1 { font-size: clamp(1.6rem, 4vw, 2.8rem); margin-bottom: var(--sp-2); }
+    .op-hero p { color: var(--clr-text-muted); margin-inline: auto; }
+
+    .op-content {
+      max-width: 780px;
+      margin-inline: auto;
+      padding: var(--sp-10) var(--sp-4);
+    }
+
+    .op-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 400;
+      margin-top: var(--sp-8);
+      margin-bottom: var(--sp-3);
+      padding-bottom: var(--sp-1);
+      border-bottom: 2px solid var(--clr-primary);
+      color: var(--clr-accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .op-content h3 {
+      font-family: var(--font-heading);
+      font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+      font-weight: 400;
+      margin-top: var(--sp-5);
+      margin-bottom: var(--sp-2);
+      color: var(--clr-text);
+    }
+    .op-content p {
+      color: var(--clr-text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: none;
+      margin-bottom: var(--sp-3);
+    }
+    .op-content ul {
+      list-style: none;
+      padding-left: var(--sp-3);
+      margin-bottom: var(--sp-3);
+    }
+    .op-content ul li {
+      position: relative;
+      padding-left: var(--sp-3);
+      color: var(--clr-text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+    .op-content ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--clr-accent);
+    }
+
+    .op-info-box {
+      background: var(--clr-primary);
+      border-radius: var(--radius-md);
+      padding: var(--sp-4) var(--sp-5);
+      margin-bottom: var(--sp-4);
+    }
+    .op-info-box p { margin-bottom: 0.4rem; color: var(--clr-text); }
+    .op-info-box p:last-child { margin-bottom: 0; }
+
+    .op-storno-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--sp-4);
+      font-size: 0.97rem;
+    }
+    .op-storno-table th {
+      background: var(--clr-accent);
+      color: #fff;
+      padding: 0.65rem var(--sp-3);
+      text-align: left;
+      font-weight: 700;
+      font-family: var(--font-body);
+    }
+    .op-storno-table td {
+      padding: 0.65rem var(--sp-3);
+      border-bottom: 1px solid var(--clr-primary);
+      color: var(--clr-text-muted);
+    }
+    .op-storno-table tr:last-child td { border-bottom: none; }
+    .op-storno-table tr:nth-child(even) td { background: #fdf5f5; }
+
+    .op-formularz {
+      background: var(--clr-primary);
+      border-radius: var(--radius-lg);
+      padding: var(--sp-5) var(--sp-6);
+      margin-top: var(--sp-8);
+    }
+
+    .op-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: var(--sp-6);
+      color: var(--clr-accent);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+    .op-back:hover { color: var(--clr-accent-dark); }
+
+    .op-divider { border: none; border-top: 1px solid var(--clr-primary); margin: var(--sp-6) 0; }
+
+    @media (max-width: 600px) {
+      .op-storno-table th, .op-storno-table td { padding: 0.5rem var(--sp-2); font-size: 0.88rem; }
+      .op-formularz { padding: var(--sp-4); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav id="navbar" class="navbar scrolled" aria-label="Hlavní navigace">
+      <div class="container">
+        <a href="/" class="nav-logo" aria-label="Kosmetika pod hradem – domů">
+          <img src="Obrazky/Logo_Kosmetikapodhradem.png" alt="Logo Kosmetika pod hradem" width="200" height="54">
+        </a>
+        <a href="/" class="btn btn-primary" style="font-size:0.9rem;padding:.65rem 1.4rem;">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          Zpět na web
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="op-hero">
+    <div class="container">
+      <span class="section-label">Právní dokumenty</span>
+      <h1>Všeobecné obchodní podmínky</h1>
+      <p>Kosmetika pod hradem – Dana Janoušová &nbsp;|&nbsp; Účinné od 6.&nbsp;1.&nbsp;2022</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="op-content">
+
+      <a href="/" class="op-back">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Zpět na hlavní stránku
+      </a>
+
+      <p>
+        Tyto obchodní podmínky se použijí pro poskytování kosmetických a souvisejících
+        individuálních Služeb, jejichž nabídka je uvedena na Webu
+        <strong>kosmetikapodhradem.cz</strong>.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Vymezení základních termínů</h2>
+
+      <p>Tyto termíny, uváděné dále s velkým počátečním písmenem, znamenají následující:</p>
+
+      <h3>Poskytovatel</h3>
+      <div class="op-info-box">
+        <p><strong>Dana Janoušová</strong> – Kosmetika pod hradem</p>
+        <p>Zapsaná v živnostenském rejstříku (příslušným je Městský úřad v Litoměřicích)</p>
+        <p>IČO: 05583900</p>
+        <p>Sídlo: Kamýk 29, 41201</p>
+        <p>Provozovna: Kamýk 65, 41201</p>
+        <p>Telefon: <a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a></p>
+        <p>E-mail: <a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a></p>
+      </div>
+
+      <h3>Uživatel</h3>
+      <p>Ten, kdo s Poskytovatelem uzavře ohledně Služby Smlouvu.</p>
+
+      <h3>Spotřebitel</h3>
+      <p>
+        Uživatel, který je fyzickou osobou a při uzavírání Smlouvy s Poskytovatelem jedná mimo rámec
+        své podnikatelské činnosti nebo mimo rámec samostatného výkonu svého povolání. Pokud Uživatel
+        uvede své IČO, má se za to, že Smlouvu neuzavírá jako Spotřebitel.
+      </p>
+
+      <h3>Smlouva</h3>
+      <p>
+        Smlouva o poskytování Služeb uzavíraná mezi Poskytovatelem a Uživatelem. Obsahem Smlouvy je
+        povinnost Poskytovatele poskytnout Uživateli Službu a povinnost Uživatele zaplatit Poskytovateli
+        stanovenou Cenu. Smlouvu tvoří Objednávka, její potvrzení a tyto obchodní podmínky, případně
+        individuální komunikace mezi smluvními stranami. Smlouva je uzavírána v českém jazyce.
+      </p>
+
+      <h3>Služba</h3>
+      <p>
+        Kosmetické ošetření, maderoterapie, masáž obličeje, krku a dekoltu, epilace obličeje
+        nebo jiná individuální kosmetická služba uvedená v aktuálním ceníku na Webu.
+      </p>
+
+      <h3>Objednávka</h3>
+      <p>
+        Řádně učiněný návrh Uživatele na uzavření Smlouvy – telefonicky, e-mailem nebo prostřednictvím
+        kontaktního formuláře na Webu.
+      </p>
+
+      <h3>Cena</h3>
+      <p>
+        Konečná cena za Službu uvedená v ceníku na Webu platném ke dni Objednávky.
+        Platí se v korunách českých.
+      </p>
+
+      <h3>Web</h3>
+      <p>Webové stránky Poskytovatele dostupné na adrese <strong>kosmetikapodhradem.cz</strong>.</p>
+
+      <h3>Občanský zákoník</h3>
+      <p>Zákon č. 89/2012 Sb., občanský zákoník, ve znění pozdějších předpisů.</p>
+
+
+      <!-- ============================================================ -->
+      <h2>Odpovědnost</h2>
+
+      <p>
+        Uživatel bere na vědomí, že výsledky kosmetických ošetření závisí na individuálním stavu
+        pleti a zdravotních podmínkách každého klienta. Poskytovatel neodpovídá za výsledky,
+        které Uživatel v souvislosti se Službou zaznamená, ani nenese odpovědnost za jakoukoliv
+        případnou majetkovou či nemajetkovou újmu, pokud postupoval v souladu s platnou odbornou praxí.
+      </p>
+      <p>
+        Uživatel je povinen před ošetřením Poskytovatele informovat o všech zdravotních obtížích,
+        alergiích, užívaných lécích nebo jiných okolnostech, které by mohly mít vliv na průběh
+        Služby. Poskytovatel neodpovídá za újmu vzniklou v důsledku zamlčení těchto informací.
+        Služby nenahrazují lékařskou ani dermatologickou péči.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Informace na Webu</h2>
+
+      <p>
+        U každé Služby je na Webu uveden její popis, rozsah a Cena. Tyto informace jsou
+        informativního charakteru a nepředstavují návrh na uzavření smlouvy; ustanovení
+        § 1732 odst. 2 Občanského zákoníku se tak nepoužije.
+      </p>
+      <p>
+        Na Webu mohou být uvedeny recenze (bývalých) klientů Poskytovatele. Všechny tyto
+        recenze jsou ověřené – Poskytovatel průběžně sbírá zpětné vazby a vybrané reference
+        zveřejňuje. Recenze na platformách třetích stran Poskytovatel neověřuje.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Objednávka a uzavření Smlouvy</h2>
+
+      <p>Uživatel si může Službu objednat:</p>
+      <ul>
+        <li>telefonicky na čísle <a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a> (pracovní dny 8:00–19:00), nebo</li>
+        <li>prostřednictvím rezervačního systému Notino dostupného na <a href="https://www.notino.cz/salony/kosmetika-pod-hradem_1/" target="_blank" rel="noopener">notino.cz</a>.</li>
+      </ul>
+      <p>
+        Smlouva je uzavřena okamžikem, kdy Poskytovatel Uživateli potvrdí termín Služby
+        (telefonicky, e-mailem nebo jiným dohodnutým způsobem). Jakékoli následné změny
+        Smlouvy jsou možné jen na základě vzájemné dohody.
+      </p>
+      <p>
+        Poskytovatel se spoléhá na pravdivost a úplnost údajů sdělených Uživatelem a nenese
+        odpovědnost za škodu vzniklou v důsledku chybných či neúplných informací.
+        Náklady na prostředky komunikace na dálku (internet, telefon) nese Uživatel v běžné výši.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Platební podmínky</h2>
+
+      <h3>Cena Služeb</h3>
+      <p>
+        Na Webu jsou uvedeny aktuální Ceny Služeb. Ceny může Poskytovatel měnit; pro Uživatele
+        platí vždy Cena platná ke dni Objednávky. Případné slevy z Ceny Služeb nelze vzájemně kombinovat.
+      </p>
+      <p>
+        Pokud by došlo ke zjevné chybě při uvedení Ceny na Webu (např. překlep), není Poskytovatel
+        povinen Uživateli Službu za takovou zjevně chybnou Cenu poskytnout a má v takovém případě
+        právo od Smlouvy odstoupit.
+      </p>
+
+      <h3>Způsob platby</h3>
+      <p>Cenu je možné uhradit následujícími způsoby:</p>
+      <ul>
+        <li>v hotovosti při poskytnutí Služby v provozovně,</li>
+        <li>bankovním převodem prostřednictvím QR kódu – QR kód sdělí Poskytovatel individuálně.</li>
+      </ul>
+
+      <h3>Splatnost Ceny</h3>
+      <p>
+        V případě platby v hotovosti je Cena splatná při poskytnutí Služby. V případě platby
+        prostřednictvím QR kódu je Cena splatná ve lhůtě dohodnuté s Poskytovatelem;
+        za zaplacení se považuje okamžik připsání příslušné částky na účet Poskytovatele.
+      </p>
+      <p>
+        Po přijetí platby Poskytovatel na vyžádání vystaví a předá či zašle příslušný doklad o zaplacení.
+      </p>
+
+      <h3>Dárkové poukazy</h3>
+      <p>
+        Dárkový poukaz je splatný předem na základě dohody s Poskytovatelem. Platnost poukazu je
+        <strong>6&nbsp;měsíců</strong> od data vydání, není-li na poukazu uvedeno jinak. Po uplynutí doby platnosti
+        poukaz propadá bez náhrady. Dárkový poukaz nelze uplatnit na již objednané a potvrzené termíny.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Zvláštní ustanovení pro poskytování Služeb</h2>
+
+      <h3>Druhy poskytovaných Služeb</h3>
+      <p>
+        Služby jsou poskytovány individuálně, naživo v provozovně Poskytovatele na adrese Kamýk&nbsp;65, 41201.
+      </p>
+
+      <h3>Dodání Služeb</h3>
+      <p>
+        Služby jsou poskytovány v termínu a rozsahu sjednaném s Uživatelem. Náklady na dopravu do
+        a z místa poskytnutí Služby nese Uživatel.
+      </p>
+
+      <h3>Změna nebo zrušení termínu</h3>
+      <p>
+        Uživatel je povinen v případě, že se nemůže dostavit na sjednaný termín nebo si přeje
+        termín změnit, tuto skutečnost Poskytovateli oznámit co nejdříve, nejpozději však
+        <strong>24 hodin před termínem</strong>, a to telefonicky na čísle
+        <a href="tel:+420725816813">+420&nbsp;725&nbsp;816&nbsp;813</a>.
+        Možnost změny termínu lze v rámci jedné Objednávky využít zpravidla jednou.
+        Pozdní zrušení nebo nedostavení se bez omluvy znemožňuje nabídnout uvolněný termín
+        jiné klientce.
+      </p>
+
+      <h3>Výhrada změn ze strany Poskytovatele</h3>
+      <p>
+        Poskytovatel si vyhrazuje právo provést změny Služby (zejména termínu konání) v případě
+        vzniku neočekávané události, která mu brání v poskytnutí Služby za původně sjednaných podmínek.
+        Všechny případné změny budou Uživateli neprodleně oznámeny. Jedná-li se o nepodstatnou změnu,
+        nemá Uživatel právo od Smlouvy odstoupit. V případě podstatné změny (zejm. změna termínu) může
+        Uživatel od Smlouvy odstoupit zasláním e-mailu Poskytovateli do 3 dnů od oznámení. Zaplacená
+        Cena bude v takovém případě vrácena do 14 dnů od odstoupení.
+      </p>
+      <p>
+        Nevyužije-li Uživatel z jakéhokoli důvodu Službu nebo její část, náhrada za tuto nevyužitou
+        část mu nepřísluší.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Autorská práva</h2>
+
+      <p>
+        Texty, fotografie a grafika zveřejněné na Webu jsou buď autorským dílem Poskytovatele,
+        nebo jsou užívány na základě příslušných licencí. Bez předchozího výslovného písemného
+        souhlasu Poskytovatele není možné vlastní obsah Webu sdílet, kopírovat, šířit ani
+        umožnit jeho užití třetím osobám.
+      </p>
+      <p>
+        V případě porušení autorských práv je Poskytovatel oprávněn požadovat vydání bezdůvodného
+        obohacení a náhradu škody. Porušení autorských práv je dále postižitelné podle autorského
+        zákona a trestněprávních předpisů.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Odstoupení od Smlouvy</h2>
+
+      <h3>Odstoupení od Smlouvy Spotřebitelem</h3>
+      <p>
+        Nejedná-li se o případ uvedený v následujícím odstavci, má Uživatel, který je Spotřebitelem,
+        dle § 1829 Občanského zákoníku právo od Smlouvy bez udání důvodu odstoupit ve lhůtě 14 dnů
+        ode dne uzavření Smlouvy.
+      </p>
+      <p>
+        Právo odstoupit od Smlouvy Spotřebitel v souladu s § 1837 Občanského zákoníku <strong>nemá</strong>
+        zejména v případě Smlouvy o poskytování Služeb, jestliže byly v plném rozsahu poskytnuty
+        a k započetí plnění došlo se souhlasem Spotřebitele před uplynutím 14denní lhůty pro
+        odstoupení (pokud Služby nebyly poskytnuty v plném rozsahu, ale jen částečně, může sice
+        Spotřebitel od Smlouvy odstoupit, je však povinen zaplatit Poskytovateli částku za plnění
+        poskytnuté před odstoupením).
+      </p>
+      <p>
+        Lhůta k odstoupení je zachována, pokud Spotřebitel oznámení o odstoupení odešle Poskytovateli
+        nejpozději 14. den po dni uzavření Smlouvy. Pro odstoupení může Spotřebitel použít formulář
+        na konci těchto obchodních podmínek nebo jakékoli jednoznačné prohlášení zaslané na kontaktní
+        adresu Poskytovatele.
+      </p>
+      <p>
+        Zaplacená Cena bude Spotřebiteli vrácena bez zbytečného odkladu, nejpozději do 14 dnů od
+        odstoupení, a to na stejný účet, ze kterého byla zaplacena. Jiným způsobem může být Cena
+        vrácena jen tehdy, pokud s tím Spotřebitel souhlasí a nevzniknou mu tím další náklady.
+      </p>
+
+      <h3>Odstoupení od Smlouvy obecně</h3>
+      <p>
+        Uživatel i Poskytovatel mohou od Smlouvy odstoupit dále v případech stanovených zákonem
+        nebo Smlouvou, zejména v případě podstatného porušení povinností druhé smluvní strany.
+      </p>
+      <p>
+        Poskytovatel má právo odstoupit od Smlouvy také z důvodu naplnění nebo nenaplnění kapacity
+        nebo z jiných vážných důvodů. Nedošlo-li ze strany Poskytovatele k plnění, bude Uživateli
+        zaplacená Cena vrácena do 14 dnů od odstoupení, a to na stejný účet, ze kterého byla
+        zaplacena, nebude-li výslovně dohodnuto jinak.
+      </p>
+      <p>
+        Pokud ze strany Uživatele nedojde k úhradě Ceny ani ve lhůtě 10 dnů po
+        splatnosti, Smlouva se uplynutím této lhůty ruší automaticky, bez nutnosti odstoupení.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Práva z vadného plnění a reklamace</h2>
+
+      <p>
+        Práva vznikající z vadného plnění se řídí platnými a účinnými právními předpisy,
+        zejména § 1914 až 1925 Občanského zákoníku.
+      </p>
+      <p>
+        Práva z vadného plnění (reklamaci) může Uživatel u Poskytovatele uplatnit prostřednictvím
+        kontaktů uvedených výše v těchto obchodních podmínkách. Reklamaci nelze uplatnit jen z toho
+        důvodu, že Služba nesplnila subjektivní očekávání Uživatele; musí se jednat o skutečnou vadu.
+      </p>
+      <p>
+        Poskytovatel odpovídá za poskytnutí Služby v rozsahu, podobě a kvalitě sjednané nebo obvyklé
+        pro tento druh Služby. Vadu Služby musí Uživatel Poskytovateli vytknout bez zbytečného odkladu
+        poté, kdy měl možnost ji zjistit, nejpozději do 6 měsíců od poskytnutí Služby.
+      </p>
+      <p>
+        Má-li Služba vadu, může Uživatel požadovat její odstranění nebo přiměřenou slevu z Ceny.
+        Nelze-li vadu odstranit nebo ji Poskytovatel včas neodstraní, může Uživatel požadovat
+        přiměřenou slevu nebo od Smlouvy odstoupit.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Vyřizování stížností, řešení spotřebitelských sporů</h2>
+
+      <p>
+        Má-li Uživatel k uzavřené Smlouvě, jejímu plnění či činnosti Poskytovatele stížnost,
+        může Poskytovatele kontaktovat na některé z kontaktních adres uvedených výše.
+      </p>
+      <p>
+        Dozor nad dodržováním povinností Poskytovatele vykonávají: Česká obchodní inspekce
+        a příslušný živnostenský úřad (Městský úřad v Litoměřicích).
+      </p>
+      <p>
+        Případný spor bude řešen přednostně smírnou cestou. Pokud je Uživatel Spotřebitelem
+        a vznikne spor ze Smlouvy, má právo na mimosoudní řešení u České obchodní inspekce,
+        IČO: 00020869. Podrobnosti jsou na <a href="https://coi.gov.cz" target="_blank" rel="noopener">coi.gov.cz</a>.
+      </p>
+
+
+      <!-- ============================================================ -->
+      <h2>Závěrečná ustanovení</h2>
+
+      <p>
+        Smlouva je uzavírána na dobu určitou, do doby splnění povinností Poskytovatele a Uživatele
+        vyplývajících ze Smlouvy.
+      </p>
+      <p>
+        Smluvní vztah mezi Poskytovatelem a Uživatelem se řídí právním řádem České republiky,
+        zejména Občanským zákoníkem. Tím nejsou dotčena práva Spotřebitele vyplývající z obecně
+        závazných právních předpisů.
+      </p>
+      <p>
+        Veškerá oznámení a sdělení se doručují Poskytovateli na poštovní nebo e-mailovou adresu
+        uvedenou výše a Uživateli na adresu sdělenou při Objednávce. Písemnosti zasílané e-mailem
+        se považují za doručené okamžikem jejich odeslání. Písemnosti zasílané poštou se považují
+        za doručené třetím pracovním dnem po odeslání, i když si adresát zásilku nepřevezme.
+      </p>
+      <p>
+        Zásady zpracování osobních údajů jsou obsaženy v samostatném dokumentu zveřejněném na Webu.
+      </p>
+      <p>
+        V případě vyšší moci nenese Poskytovatel odpovědnost za škodu vzniklou v souvislosti s tímto
+        případem; trvá-li stav vyšší moci déle než 10 dnů, je Poskytovatel oprávněn odstoupit od Smlouvy.
+      </p>
+      <p>
+        Je-li nebo stane-li se některé ustanovení těchto obchodních podmínek neplatným či neúčinným,
+        namísto něj nastoupí ustanovení, jehož smysl se mu co nejvíce přibližuje. Neplatnost
+        jednotlivého ustanovení nemá vliv na platnost ostatních.
+      </p>
+      <p>
+        Tyto obchodní podmínky je Poskytovatel oprávněn jednostranně měnit; pro Uživatele platí
+        znění účinné ke dni Objednávky. Aktuální znění je zveřejněno na Webu.
+      </p>
+      <p><strong>Tyto obchodní podmínky jsou účinné od 6.&nbsp;1.&nbsp;2022.</strong></p>
+
+
+      <hr class="op-divider">
+
+      <!-- Formulář -->
+      <div class="op-formularz">
+        <h2 style="margin-top:0;">Formulář pro odstoupení od smlouvy</h2>
+        <p><em>(Vyplňte tento formulář a pošlete jej zpět pouze v případě, že chcete odstoupit od smlouvy.)</em></p>
+
+        <p><strong>Adresát:</strong><br>
+        Dana Janoušová – Kosmetika pod hradem<br>
+        Kamýk 29, 41201 (sídlo)<br>
+        <a href="mailto:Dana.Ltm@seznam.cz">Dana.Ltm@seznam.cz</a></p>
+
+        <p>Oznamuji, že tímto odstupuji od smlouvy o poskytnutí těchto služeb:<br><br>
+        ……………………………………………………………………………………………………………</p>
+
+        <p>Datum objednání / sjednaný termín ošetření: ………………………………………………</p>
+
+        <p>Jméno a příjmení spotřebitele: ………………………………………………………………</p>
+
+        <p>Adresa spotřebitele: ……………………………………………………………………………</p>
+
+        <p>Číslo bankovního účtu pro vrácení peněz: …………………………………………………</p>
+
+        <p>Datum: ……………………………</p>
+
+        <p>Podpis spotřebitele (pouze pokud je tento formulář zasílán na listině): ……………</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" aria-label="Patička stránky">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top:0;border-top:none;">
+        <p>&copy; 2026 Kosmetika pod hradem – Dana Janoušová. Všechna práva vyhrazena.</p>
+        <p class="footer-ico">IČO:&nbsp;05583900 | Zapsáno v&nbsp;Živnostenském rejstříku</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
